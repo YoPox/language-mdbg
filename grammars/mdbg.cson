@@ -1,0 +1,43 @@
+'fileTypes': [
+  'mdbg'
+]
+'name': 'mdbg'
+'patterns': [
+  {
+    'name': 'string.regexp'
+    'match': '(\$[^$]*\$)'
+  },
+  {
+    'name': 'markup.quote'
+    'match': '((?:^|(?<=\n))(?:> .*\n?)+)'
+  },
+  {
+    'name': 'emphasis.italic.markup.mdbg'
+    'match': '(%(?! )[^%]*%)'
+  },
+  {
+    'name': 'strong.emphasis.bold.markup.mdbg'
+    'match': '(\\*(?! )[^\\*]*\\*)'
+  },
+  {
+    'name': 'emphasis.underline.markup.mdbg'
+    'match': '(_(?! )[^_]*_)'
+  },
+  {
+    'name': 'strike.markup.mdbg'
+    'match': '(~(?! )[^~]*~)'
+  },
+  # {
+  #   "name": "punctuation.definition.heading"
+  #   "match": "^#{1,6}\\s+.+$"
+  # },
+  {
+    "name": "markup.list"
+    "match": "((?:(?:^|(?<=\n))(?:    |\t)- (?:.|\n(?!\n))*)+)"
+  },
+  {
+    "name": "punctuation.terminator"
+    "match": "/$"
+  }
+]
+'scopeName': 'source.mdbg'
