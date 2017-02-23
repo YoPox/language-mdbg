@@ -4,8 +4,8 @@
 'name': 'mdbg'
 'patterns': [
   {
-    'name': 'string.regexp'
-    'match': '(\$[^$]*\$)'
+    'name': 'string.regexp.ruby'
+    'match': '(\\$(?! )[^\\$]*\\$)'
   },
   {
     'name': 'markup.quote'
@@ -27,13 +27,13 @@
     'name': 'strike.markup.mdbg'
     'match': '(~(?! )[^~]*~)'
   },
-  # {
-  #   "name": "punctuation.definition.heading"
-  #   "match": "^#{1,6}\\s+.+$"
-  # },
+  {
+    "name": "punctuation.definition.heading"
+    "match": "^[#]+.*$"
+  },
   {
     "name": "markup.list"
-    "match": "((?:(?:^|(?<=\n))(?:    |\t)- (?:.|\n(?!\n))*)+)"
+    "match": "((?:(?:^|(?<=\n))(?:    |\t)*- (?:.|\n(?!\n))*)+)"
   },
   {
     "name": "punctuation.terminator"
