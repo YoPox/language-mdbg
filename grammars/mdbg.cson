@@ -9,26 +9,28 @@
   },
   {
     'name': 'string.regexp.ruby'
-    'match': '(\\\\\\[(?:.|\n)*?\\\\\\])'
+    'begin': '\\\\\\['
+    'end': '\\\\\\]'
+    # 'match': '(\\\\\\[(?:.|\\s)*?\\\\\\])'
   },
   {
     'name': 'markup.quote'
     'match': '((?:^|(?<=\n))(?:> .*\n?)+)'
   },
   {
-    'name': 'emphasis.italic.markup.mdbg'
+    'name': 'emphasis.italic.markup'
     'match': '(%(?! )[^%]*%)'
   },
   {
-    'name': 'strong.emphasis.bold.markup.mdbg'
+    'name': 'strong.emphasis.bold.markup'
     'match': '(\\*(?! )[^\\*]*\\*)'
   },
   {
-    'name': 'emphasis.underline.markup.mdbg'
+    'name': 'emphasis.underline.markup'
     'match': '(_(?! )[^_]*_)'
   },
   {
-    'name': 'strike.markup.mdbg'
+    'name': 'strike.markup'
     'match': '(~(?! )[^~]*~)'
   },
   {
