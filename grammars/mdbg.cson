@@ -8,6 +8,10 @@
     'match': '(\\$(?! )[^\\$]*\\$)'
   },
   {
+    'name': 'string.regexp.ruby'
+    'match': '(\\\\\\[(?:.|\n)*?\\\\\\])'
+  },
+  {
     'name': 'markup.quote'
     'match': '((?:^|(?<=\n))(?:> .*\n?)+)'
   },
@@ -38,6 +42,10 @@
   {
     "name": "punctuation.terminator"
     "match": "/$"
+  },
+  {
+    "name": "keyword.control.elements"
+    "match": "^!!.*$"
   }
 ]
 'scopeName': 'source.mdbg'
